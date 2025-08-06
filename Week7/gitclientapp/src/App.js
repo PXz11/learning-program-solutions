@@ -1,0 +1,22 @@
+import { useEffect, useState } from 'react';
+import GitClient from './GitClient';
+import './App.css';
+
+function App() {
+  const [repositories, setRepositories] = useState([]);
+  useEffect(() => {
+    GitClient.getRepositories('techiesyed').then(r => setRepositories(r.data));
+  }, []);
+
+
+  return (
+    <div className="App">
+      <h1>Git repositories of User - techiesyed</h1>
+      {repositories.map(r =>
+        <p key={r.name}>{r.name}</p>
+      )}
+    </div>
+  );
+}
+
+export default App;

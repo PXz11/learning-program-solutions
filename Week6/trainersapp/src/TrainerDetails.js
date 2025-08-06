@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import TrainersMock from "./TrainersMock";
 
-function TrainerDetail() {
-  const { id } = useParams();
-  const Trainer = TrainersMock.find(t => t.id.toString() === id);
+function TrainerDetails() {
+  const { id} = useParams();
+  const Trainer = TrainersMock.find(t => t.trainerId === id);
 
   if (!Trainer) {
     return <p>Trainer not found</p>;
@@ -25,4 +25,4 @@ function TrainerDetail() {
   )
 }
 
-export default TrainerDetail;
+export default TrainerDetails;

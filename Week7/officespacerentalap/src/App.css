@@ -1,0 +1,14 @@
+.app-container {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.textRed {
+  color: red;
+}
+
+.textGreen {
+  color: green;
+}
+

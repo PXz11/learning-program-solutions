@@ -1,0 +1,31 @@
+.course-section,
+.book-section {
+  border-right: 4px solid green;
+  padding: 20px;
+  width: 30%;
+}
+
+.blog-section {
+  border-left: 4px solid green;
+  padding: 20px;
+  width: 30%;
+}
+
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+h3 {
+  margin: 8px 0 2px;
+}
+
+h4 {
+  margin: 0 0 10px;
+}
